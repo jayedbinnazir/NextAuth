@@ -5,7 +5,7 @@ import mongoconnect from "@/app/mongodb/mongoconnect";
 const CreateProduct = async () => {
   await mongoconnect();
 
-  let products = await ProductModel.find();
+  let products = await ProductModel.find({});
 
   return (
     <div>
